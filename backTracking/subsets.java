@@ -16,7 +16,7 @@ public class Solution {
         }
        
        for ( int i=0;i<=a.size();i++){
-           dfs( a, result, temp, 0, i);
+           subsetUtil( a, result, temp, 0, i);
        }
        
        Collections.sort(result, new Comparator<ArrayList<Integer>>() {
@@ -37,7 +37,7 @@ public class Solution {
         
     }
     
-    public void dfs(ArrayList<Integer> a,ArrayList<ArrayList<Integer>> result,ArrayList<Integer> temp,
+    public void subsetUtil(ArrayList<Integer> a,ArrayList<ArrayList<Integer>> result,ArrayList<Integer> temp,
                     int index, int k   ){
            if (temp.size() == k )
             {
